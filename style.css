@@ -8,10 +8,22 @@ header {
     flex-direction: row;
     justify-content: space-between;
     margin: 2rem 10rem;
+    font-size: 25px;
+    align-items: center;
 }
     header h4 {
         padding-left: 4rem;
         color : gray;
+
+        &:hover {
+            color: black;
+            transform: scale(1.1);
+            transition: 0.2s ease;
+            cursor: pointer;
+        }
+    }
+    header img {
+        object-fit: contain;
     }
 
 footer .container-1 {
@@ -53,6 +65,14 @@ section .upper-part {
     padding: 5rem 10rem;
 }
 
+.upper-part h1 {
+    font-size: 50px;
+}
+
+.upper-part p {
+    font-size: 30px;
+}
+
 section .upper-part button{
     border : none;
     padding: 1rem 2rem;
@@ -73,13 +93,21 @@ section .down-part article {
     margin: 2rem 4rem;
 }
 
+.down-part h1 {
+    font-size : 40px;
+}
+
+.down-part h2 {
+    font-size: 30px;
+}
+
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
 
 .search-container {
     position: absolute;
-    top: 80%; /* 위치 조정: 헤더와 메인 컨텐츠 중간에 위치시킴 */
+    top: 85%; /* 위치 조정: 헤더와 메인 컨텐츠 중간에 위치시킴 */
     left: 50%;
     transform: translateX(-50%);
     width: 80%;
@@ -98,6 +126,7 @@ section .down-part article {
     border-radius: 5px;
     border: none;
     outline: none;
+    font-size: 25px;
 }
 
 .search-container button {
@@ -108,4 +137,22 @@ section .down-part article {
     border: none;
     cursor: pointer;
     margin-left: 10px;
+    font-size: 25px;
+
+    &:hover {
+        transform: scale(1.1);
+        transition: 0.2 ease;
+
+    }
+}
+
+.article-div {
+    display: flex;
+    flex-direction: row;
+      
+}
+
+.article-div article {
+    padding: 2rem; 
+    border-radius: 1rem;
 }
